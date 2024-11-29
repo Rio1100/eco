@@ -14,46 +14,46 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 relative">
-    <!-- Регистрационная форма в правом верхнем углу -->
-    <div class="absolute top-4 right-4 bg-white p-4 shadow-lg rounded-lg">
-        <h2 class="text-lg font-semibold mb-2">Регистрация</h2>
-        <form class="space-y-4">
-            <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Имя</label>
-                <input type="text" id="name" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите имя" required>
-            </div>
-            <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email или Telegram</label>
-                <input type="email" id="email" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите email" required>
-            </div>
-            <div>
-                <label for="city" class="block text-sm font-medium text-gray-700">Город</label>
-                <input type="text" id="city" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите город" required>
-            </div>
-            <button type="submit" class="w-full bg-teal-600 text-white py-2 rounded hover:bg-teal-700 transition">
-                Зарегистрироваться
-            </button>
-        </form>
-    </div>
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
-    <header class="bg-teal-600 text-white py-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-3xl font-bold">Экономикс</h1>
-            <p class="mt-2 text-lg">Экономия — это мудрость. Найдите товары дешевле уже сегодня!</p>
+    <header class="bg-teal-600 text-white py-6 relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold">Экономикс</h1>
+                <p class="mt-2 text-lg">Экономия — это мудрость. Найдите товары дешевле уже сегодня!</p>
+            </div>
+            <!-- Регистрационная форма -->
+            <div class="bg-white p-4 shadow-lg rounded-lg text-gray-800">
+                <h2 class="text-lg font-semibold mb-2">Регистрация</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Имя</label>
+                        <input type="text" id="name" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите имя" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email или Telegram</label>
+                        <input type="email" id="email" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите email" required>
+                    </div>
+                    <div>
+                        <label for="city" class="block text-sm font-medium text-gray-700">Город</label>
+                        <input type="text" id="city" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Введите город" required>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-600 text-white py-2 rounded hover:bg-teal-700 transition">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
 
+    <!-- Promo Image -->
+    <section class="mt-4">
+        <img src="https://www.caravan.kz/wp-content/uploads/images/655941.jpg" alt="Акции и скидки" class="w-full h-auto">
+    </section>
+
     <!-- Main Content -->
     <main class="container mx-auto mt-8 px-4">
-        <!-- Promo Section with Background -->
-        <section class="relative bg-white shadow-md rounded-lg overflow-hidden">
-            <!-- Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://via.placeholder.com/1200x800');"></div>
-            <!-- Content -->
-            <div class="relative p-6">
-               
         <!-- Input for Product Search -->
         <section class="mt-8 flex justify-center items-center">
             <input type="text" placeholder="Введите название продукции" class="w-2/3 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300 transition">
@@ -61,10 +61,7 @@
                 Найти
             </button>
         </section>
- <h2 class="text-2xl font-semibold text-center mb-4">Текущие акции и скидки</h2>
-                <p class="text-center text-gray-700">На этой неделе — самые выгодные предложения для вас! Найдите продукцию с максимальными скидками и начните экономить уже сегодня.</p>
-            </div>
-        </section>
+
         <!-- Features -->
         <section class="text-center mt-12">
             <h2 class="text-2xl font-semibold mb-4">Почему стоит выбрать нас?</h2>
