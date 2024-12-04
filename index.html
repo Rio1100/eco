@@ -6,11 +6,10 @@
     <title>Экономикс — Экономьте с умом</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Дополнительный стиль для hover эффекта */
-        input:focus {
-            outline: none;
-            border-color: #38bdf8; /* Акцентный цвет */
-            box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.5); /* Тень */
+        /* Эффекты для тени и окантовки */
+        .highlight-border {
+            border: 2px solid #38bdf8; /* Бирюзовая окантовка */
+            box-shadow: 0 4px 6px rgba(56, 189, 248, 0.3); /* Тень */
         }
     </style>
 </head>
@@ -28,15 +27,15 @@
     <section class="container mx-auto mt-8 px-4">
         <h2 class="text-2xl font-semibold text-center mb-4">Почему стоит выбрать нас?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 bg-white shadow rounded-lg">
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
                 <h3 class="text-xl font-semibold mb-2">Умный поиск</h3>
                 <p>Наш алгоритм найдет лучший товар за считанные секунды.</p>
             </div>
-            <div class="p-6 bg-white shadow rounded-lg">
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
                 <h3 class="text-xl font-semibold mb-2">Лучшие цены</h3>
                 <p>Мы предоставляем только самые выгодные предложения.</p>
             </div>
-            <div class="p-6 bg-white shadow rounded-lg">
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
                 <h3 class="text-xl font-semibold mb-2">Простота использования</h3>
                 <p>Интуитивный интерфейс — начинайте экономить уже сегодня!</p>
             </div>
@@ -46,7 +45,8 @@
     <!-- Input for Product Search -->
     <section class="mt-8 container mx-auto px-4">
         <div class="flex justify-center">
-            <input type="text" placeholder="Введите название продукции" class="w-2/3 md:w-3/4 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300 transition">
+            <input type="text" placeholder="Введите название продукции" 
+                   class="w-2/3 md:w-3/4 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300 transition highlight-border">
             <button class="ml-4 bg-teal-600 text-white py-2 px-6 rounded hover:bg-teal-700 transition">
                 Найти
             </button>
@@ -57,7 +57,7 @@
     <section class="relative mt-8">
         <img src="https://www.caravan.kz/wp-content/uploads/images/655941.jpg" alt="Акции и скидки" class="w-full h-auto">
         <!-- Регистрационная форма справа -->
-        <div class="absolute top-4 right-4 bg-white p-4 shadow-lg rounded-lg text-gray-800">
+        <div class="absolute top-4 right-4 bg-white p-4 shadow-lg rounded-lg text-gray-800 highlight-border">
             <h2 class="text-lg font-semibold mb-2">Регистрация</h2>
             <form class="space-y-4">
                 <div>
@@ -76,6 +76,25 @@
                     Зарегистрироваться
                 </button>
             </form>
+        </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section class="container mx-auto mt-12 px-4">
+        <h2 class="text-2xl font-semibold text-center mb-6">Отзывы наших клиентов</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
+                <p class="text-gray-700">"Нашла все необходимые товары за минимальные цены! Очень удобный сайт."</p>
+                <p class="mt-2 text-sm font-medium text-teal-600">— Елена, Москва</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
+                <p class="text-gray-700">"Экономикс помог мне сократить траты почти вдвое. Спасибо!"</p>
+                <p class="mt-2 text-sm font-medium text-teal-600">— Дмитрий, Санкт-Петербург</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded-lg highlight-border">
+                <p class="text-gray-700">"Теперь я точно знаю, где покупать выгодно. Просто супер!"</p>
+                <p class="mt-2 text-sm font-medium text-teal-600">— Анна, Казань</p>
+            </div>
         </div>
     </section>
 
